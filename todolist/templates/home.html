@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    <title> Home page </title>
+{% endblock title %} 
+
+{% block content %}
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-4">
+                <img src="{% static 'images/notes1.jpg' %}" alt="Notes" class="rounded-lg shadow-sm" width=360" height="250">
+
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'images/notes2.jpg' %}" alt="Notes"width="360"class="rounded-lg shadow-sm"  height="250">
+
+
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'images/notes3.jpg' %}" alt="Notes" class="rounded-lg shadow-sm" width="360" height="250">
+
+
+
+            </div>
+        
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-10 offset-md-3">
+                <centre><p class="h1 text-primary ">Quick And Easy To Use ,Anytime,Anywhere</p></centre>
+                <centre><p class="h2 mt-3">"Plan Your Day Better,Get Your Life Organised</p></centre>
+                <centre><p class="h5 text-dark">TODO can help you to do your task in one place</p></centre>
+                <centre><a href="{% url 'todolist' %}"><button type="button" class="btn btn-primary btn-lg mt-3 shadow-sm">Let,s Get Started</button></a></centre>
+            </div>
+        </div>
+        
+    </div>
+{% endblock content %}
