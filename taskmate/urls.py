@@ -18,8 +18,8 @@ from django.urls import path,include
 from todolist import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('home' ,views.home,name='home'),
+    path('admin/', admin.site.urls),
     path('task/', include('todolist.urls')),
     path('account/', include('user_app.urls')),
     path('contact' ,views.contact,name='contact'),
