@@ -19,9 +19,10 @@ from todolist import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('home' ,views.home,name='home'),
     path('task/', include('todolist.urls')),
     path('account/', include('user_app.urls')),
     path('contact' ,views.contact,name='contact'),
     path('about' ,views.about,name='about'),
-    path('home' ,views.home,name='home'),
+    
 ]
