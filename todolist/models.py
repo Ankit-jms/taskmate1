@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 class tasklist(models.Model):
 
-    manage= models.ForeignKey(User,on_delete=models.CASCADE,default=None, blank=True,null=True)
+    manage= models.ForeignKey(User,on_delete=models.CASCADE,default=None,null=True)
     task = models.CharField(max_length=300)
     done = models.BooleanField(default=False)
 
